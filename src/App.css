@@ -1,38 +1,50 @@
-.App {
-  text-align: center;
+.logo.position-absolute {
+  left: -140px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.logo {
+  font-size: 35px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@media (min-width: 992px){
+.container {
+  max-width: 836px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.banner img{
+  max-width: 100%;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.top-articles a {
+  text-decoration: none;
+  color: #111111;
+}
+.top-articles a:hover {
+  text-decoration: underline; 
+}
+.top-articles img {
+  width: 25px;
+  height: 25px;
+}
+.search-block {
+  background: #ffcc00;
+  border-radius: 0.75rem 0.625rem 0.625rem 0.75rem;
+}
+input.main-search {
+  border-radius: 0.75rem 0.625rem 0.625rem 0.75rem;
+  border: 1px solid transparent;
+  padding: 0.75rem !important;
+}
+input.main-search:focus {
+  outline: none;
+  border: 1px solid #ffffff;
+  box-shadow: 0 0 10px #ffffff;
+}
+button.main-button {
+  background-color: transparent;
+  border: 0;
+  height: 100%;
+}
+.tab button.active {
+  --bs-text-opacity: 1;
+}
+.tab button {
+  --bs-text-opacity: 0.5;
 }
